@@ -20,7 +20,7 @@
               alert("Phone Number must be filled out");
               return false;
           }
-          if(z.length < 12){
+          if(z.length < 7 || z.length >11){
               alert("Invalid Phone Number");
               return false;
           }
@@ -52,7 +52,7 @@
     <br>
     <br>
     <table align="center">
-      <form name="myform" action="Booking.php" onsubmit="return validateForm()" method="post">
+      <form name="myform" action="Booked.php" onsubmit="return validateForm()" method="post">
       <tr>
         <th COLSPAN="2">BOOK ROOM</th>
       </tr>
